@@ -1,0 +1,101 @@
+.SignUpBody{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  #D8BFD8;
+    gap: 20px;
+}
+
+.FirstNameHolder{
+    width: 25%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.First-Name{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.LastNameHolder{
+    width: 25%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.LastName{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+}
+.PhoneNumberHolder{
+    width: 25%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.PhoneNumber{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.PasswordHolder{
+    width: 25%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Password{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+}
+.ConfirmPasswordHolder{
+    width: 25%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ConfirmPassword{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.SignUpButton{
+    width: 70px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: white;
+}

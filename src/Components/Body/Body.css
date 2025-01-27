@@ -1,0 +1,79 @@
+.Body{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.myBookWrapper{
+    width: 95%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text{
+    width: 100%;
+    height: max-content;
+    color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 13px;
+    font-weight:bold;
+    cursor: pointer;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.Direction{
+    font-size: 40px;
+    text-align: center;
+}
+
+.MyBookHolder{
+    width: 100%;
+    height: 90%;
+}
+.book{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: aqua;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+
+
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.Action{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: 10px;
+    right: 10px;
+}
+
+.CheckIcon{
+    font-size: 20px;
+    background-color: green;
+}
