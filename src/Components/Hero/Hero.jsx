@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom';
 const Hero = () => {
   const navigate = useNavigate();
 
-  const handleViewCategory = (item) => {
-    navigate('/HomePage/Category', { state: { category: item } });
+  const handleViewCategory = () => {
+    navigate('/HomePage/Category');
   };
 
   return (

@@ -14,9 +14,7 @@ const Card = () => {
     <p>Harry potter and the philosopher stone</p>
       </div>
       
-    <div className='addToFavorite'>
-      <FaHeart color='red' />
-      </div>
+   
 
       <div className='stars'>
       <FaStar color='gold'  size={20}/>
@@ -24,6 +22,9 @@ const Card = () => {
       <FaStar color='gold'  size={20}/>
       <FaStar color='gold'  size={20}/>
       <FaStar color='gold'  size={20}/>
+      <div className='addToFavorite'>
+      <FaHeart color='red' />
+      </div>
       </div>
     </div>
   )
