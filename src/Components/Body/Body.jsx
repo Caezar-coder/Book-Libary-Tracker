@@ -2,8 +2,10 @@ import React from 'react';
 import { WiDirectionRight } from "react-icons/wi";
 import { IoIosCheckmark } from "react-icons/io";
 import './Body.css';
+import { useNavigate } from 'react-router-dom';
 
 const Body = () => {
+ 
   return (
     <div className="Body">
       <div className="myBookWrapper">
