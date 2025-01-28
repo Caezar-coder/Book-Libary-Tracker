@@ -23,11 +23,12 @@
 }
 
 .CardHolder{
-    width: 100%;
+    width: 90%;
     height: max-content;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 120px;
 }
 
 .Card{
@@ -37,6 +38,7 @@
     position: relative;
     background-color: aliceblue;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -54,13 +56,13 @@
         position: absolute;
         font-weight: bold;
         font-size: 35px;
-        color: white;
+        color: rgb(78, 78, 78);
 
     }
 }
 
 .Card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
