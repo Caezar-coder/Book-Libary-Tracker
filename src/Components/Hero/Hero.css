@@ -7,20 +7,13 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    background-color: blueviolet;
+    border-radius: 0px 0px 300px 300px;
 }
 
-.heroText{
-    width: 100%;
-    height: auto;
-}
 
-.CategoryText{
-    font-size: 17px;
-    font-weight: bold;
-    color: blueviolet;
-    cursor: pointer;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
+
+
 
 .CardHolder{
     width: 90%;

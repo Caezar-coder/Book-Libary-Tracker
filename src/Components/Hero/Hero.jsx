@@ -12,9 +12,6 @@ const Hero = () => {
 
   return (
     <div className="HeroBody">
-      <div className="heroText">
-        <h2 className="CategoryText">Category</h2>
-      </div>
      <div className="CardHolder">
      {
         Category.map((item) => (

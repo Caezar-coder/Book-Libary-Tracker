@@ -10,6 +10,9 @@ const Header = () => {
       <p style={{fontSize: '30px', fontStyle: 'italic', fontWeight: 'bolder' , color: 'white'}}>My Book Store</p>
       <IoSearch style={{fontSize: '30px', color: 'white'}}/>
      </div>
+      <div className="heroText">
+      <h2 className="CategoryText">Category</h2>
+      </div>
     </div>
   )
 }

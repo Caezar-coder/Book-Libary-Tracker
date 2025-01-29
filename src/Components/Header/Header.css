@@ -3,9 +3,11 @@
     height: 15%;
     padding: 25px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: blueviolet;
+    position: relative;
+    overflow: hidden;
 }
 
 .HeaderWrapper{
@@ -15,4 +17,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.heroText{
+    width: 10%;
+    height: auto;
+}
+
+
+.CategoryText{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    /* background-color: red; */
+    margin-right: 100px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
