@@ -53,7 +53,7 @@ const SignUp = () => {
     
     setError('');
     setTimeout(() => {
-      navigate('/HomePage');
+      navigate('/Landing-page');
     }, 2000);
   };
 
@@ -64,7 +64,7 @@ const SignUp = () => {
 
   return (
     <div className="SignUpBody">
-      <h4>Sign Up</h4>
+      
       {error && <p className="error">{error}</p>}
       <div className="FirstNameHolder">
         <h4>First Name</h4>
@@ -125,7 +125,7 @@ const SignUp = () => {
         Sign Up
       </button>
       <div className="Login">
-        <p onClick={handleLogin}>Already have an account?</p>
+        <p onClick={handleLogin} style={{color: 'black'}}>Already have an account?</p>
       </div>
     </div>
   );

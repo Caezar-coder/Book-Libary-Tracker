@@ -6,7 +6,6 @@
    justify-content: center;
    align-items: center;
    gap: 20px;
-   background-color: #D8BFD8;
 
 }
 
@@ -25,20 +24,21 @@
     gap: 10px;
 }
 
-.PhoneNumber{
+.phoneNumber{
     width: 100%;
     height: 40px;
     padding: 10px;
-    border-radius: 20px;
-    border: 2px solid black;
+    border-radius: 8px;
+    border: 2px solid blueviolet;
+
 
 }
-.Password{
+.password{
     width: 100%;
     height: 40px;
     padding: 10px;
-    border-radius: 20px;
-    border: 2px solid black;
+    border-radius: 8px;
+    border: 2px solid blueviolet;
 
 }
 .ForgotPass{
@@ -47,11 +47,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
+
+    p{
+        cursor: pointer;
+    }
 }
 
 .LoginButton{
-    width: 70px;
-    height: 30px;
+    width: 80px;
+    height: 40px;
     background-color:  blueviolet;
     color: white;
     font-weight: bold;
