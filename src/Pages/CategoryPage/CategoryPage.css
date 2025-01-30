@@ -1,25 +1,57 @@
+
 .CategoryPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .CategoryPage h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .CategoryImage {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .CategoryPage p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.CategoryPage h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.Books {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  justify-items: center;
+  /* background-color: red; */
+}
+
+
+.BookCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.BookCard:hover {
+  transform: translateY(-5px);
+}
+
+.BookCard p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #34495e;
+}
+
+.BookCard p:first-of-type {
+  font-weight: bold;
+  font-size: 18px;
+}
+.error {
+  color: red;
+  font-size: 18px;
+  text-align: center;
+}

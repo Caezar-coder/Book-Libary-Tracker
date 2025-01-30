@@ -42,7 +42,7 @@ const Login = () => {
     
     setError('');
     setTimeout(() => {
-      navigate('/HomePage');
+      navigate('/Landing-page');
     }, 2000);
   };
 
@@ -53,14 +53,13 @@ const Login = () => {
 
   return (
     <div className="LoginBody">
-      <h2>Login</h2>
       {error && <p className="error">{error}</p>}
       <div className="PhoneNumberHolder">
         <h4>Phone Number or Email</h4>
         <input
           type="text"
           placeholder="Enter phone number or email"
-          className="PhoneNumber"
+          className="phoneNumber"
           name="emailOrPhone"
           value={formData.emailOrPhone}
           onChange={handleChange}
@@ -71,18 +70,18 @@ const Login = () => {
         <input
           type="password"
           placeholder="Enter your password"
-          className="Password"
+          className="password"
           name="password"
           value={formData.password}
           onChange={handleChange}
         />
       </div>
       <div className="ForgotPass">
-        <p>Forgot Password?</p>
+        <p style={{color: 'black'}}>Forgot Password?</p>
         <p className="clickHere">Click here</p>
       </div>
       <div className="OpenAcct">
-        <p onClick={handleOpenAcct}>Don't have an account?</p>
+        <p onClick={handleOpenAcct} style={{color: 'black'}}>Don't have an account?</p>
       </div>
       <button onClick={handlePass} className="LoginButton">
         Login

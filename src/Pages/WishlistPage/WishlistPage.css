@@ -1,0 +1,49 @@
+
+.WishlistPage {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+  }
+  
+  .WishlistPage h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .WishlistPage ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .WishlistPage li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .WishlistPage li p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .WishlistPage li p:first-child {
+    font-weight: bold;
+  }
+  
+  .WishlistPage p {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    font-style: italic;
+  }
+  
+  .WishlistPage p.empty-message {
+    color: #999;
+    font-size: 18px;
+  }
+  
