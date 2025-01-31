@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import { WishlistProvider } from './Pages/WishlistPage/WishlistContext';
 import Layout from './Pages/Layout/Layout';
 import HomePage from './Pages/HomePage/HomePage';
@@ -14,7 +14,7 @@ import BookDetail from './Pages/BookDetails/BookDetails';
 
 
 const App = () => {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <SplashScreen />, 
