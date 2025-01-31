@@ -1,24 +1,43 @@
 import React from 'react';
 import { useWishlist } from './WishlistContext';
 import './WishlistPage.css';
+import images from '../../Components/Data/images'; 
 
 function WishlistPage() {
-  const { wishlist } = useWishlist(); 
+  const { wishlist, removeFromWishlist } = useWishlist();
+
   return (
     <div className="WishlistPage">
-      <h1>Your Wishlist</h1>
       {wishlist.length > 0 ? (
         <ul>
-          {wishlist.map((book, index) => (
-            <li key={index}>
-              <p>{book.title}</p>
-              <p>Author: {book.author}</p>
-              <p>Published: {book.yearPublished}</p>
-            </li>
-          ))}
+          {wishlist.map((book, index) => {
+           
+            
+
+            return (
+              <li key={index} className="wishlist-item">
+                <div className="book-details">
+                  <div className="book-img">
+                  <img src={images} alt={book.title} />
+                  </div>
+                  <div className="book-info">
+                    <p>{book.title}</p>
+                    <p>Author: {book.author}</p>
+                    <p>Published: {book.publicationYear}</p>
+                    <button
+                      className="remove-btn"
+                      onClick={() => removeFromWishlist(book.id)} 
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       ) : (
-        <p>Your wishlist is empty.</p>
+        <p >No book has been selected</p>
       )}
     </div>
   );

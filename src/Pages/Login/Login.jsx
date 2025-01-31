@@ -54,7 +54,7 @@ const Login = () => {
   return (
     <div className="LoginBody">
       {error && <p className="error">{error}</p>}
-      <div className="PhoneNumberHolder">
+      <div className="phoneNumberHolder">
         <h4>Phone Number or Email</h4>
         <input
           type="text"
@@ -65,7 +65,7 @@ const Login = () => {
           onChange={handleChange}
         />
       </div>
-      <div className="PasswordHolder">
+      <div className="passwordHolder">
         <h4>Password</h4>
         <input
           type="password"
@@ -76,7 +76,7 @@ const Login = () => {
           onChange={handleChange}
         />
       </div>
-      <div className="ForgotPass">
+      <div className="forgotPass">
         <p style={{color: 'black'}}>Forgot Password?</p>
         <p className="clickHere">Click here</p>
       </div>

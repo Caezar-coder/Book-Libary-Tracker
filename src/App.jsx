@@ -10,17 +10,18 @@ import CategoryPage from './Pages/CategoryPage/CategoryPage';
 import WishlistPage from './Pages/WishlistPage/WishlistPage';
 import LandingPage from './Pages/LandingPage/LandingPage';
 import Hero from './Components/Hero/Hero';
+import BookDetail from './Pages/BookDetails/BookDetails';
+
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <SplashScreen />, // Default path shows SplashScreen
+      element: <SplashScreen />, 
     },
-   
     {
       path: 'Landing-page',
-      element: <Layout />, // Wrap with Layout for consistent design
+      element: <Layout />, 
       children: [
         {
           index: true,
@@ -28,9 +29,8 @@ const App = () => {
         },
         {
           path: 'Home',
-          element: <HomePage />
+          element: <HomePage />,
         },
-
         {
           path: 'Category',
           element: <CategoryPage />,
@@ -38,6 +38,14 @@ const App = () => {
         {
           path: 'wishList',
           element: <WishlistPage />,
+        },
+        {
+          path: 'Hero',
+          element: <Hero />, 
+        },
+        {
+          path: 'book/:id', 
+          element: <BookDetail />,
         },
       ],
     },

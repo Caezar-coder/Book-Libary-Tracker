@@ -45,8 +45,9 @@
     height: 450px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    /* gap: 15px; */
     border-radius: 15px;
     transition: transform 0.3s ease;
     cursor: pointer;

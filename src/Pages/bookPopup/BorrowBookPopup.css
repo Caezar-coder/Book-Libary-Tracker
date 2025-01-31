@@ -1,0 +1,129 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 35%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.date-picker {
+  width: 50%;
+}
+
+.dateInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid blueviolet;
+  border-radius: 8px;
+}
+
+.modal-actions {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ok-button {
+  background-color: white;
+  color: blueviolet;
+  border: 2px solid blueviolet;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+}
+
+.ok-button:hover {
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.cancel-button {
+  background-color: white;
+  color: blueviolet;
+  border: 2px solid blueviolet;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 70px;
+  height: 30px;
+}
+
+.cancel-button:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 50%;
+    height: 10%;
+  }
+
+  .modal-actions {
+    width: 70%;
+  }
+
+  .dateInput {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .ok-button,
+  .cancel-button {
+    width: 60px;
+    height: 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    width: 80%;
+    height: 30%;
+  }
+
+  .modal-actions {
+    width: 80%;
+  }
+
+  .dateInput {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .ok-button,
+  .cancel-button {
+    width: 55px;
+    height: 25px;
+    font-size: 12px;
+  }
+  .borrow{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
