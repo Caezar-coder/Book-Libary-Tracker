@@ -82,11 +82,11 @@ const Hero = () => {
             <div
               key={book.id || index}
               className="Card"
-              onClick={() => handleViewBook(book, index)} // Pass the index to match the correct image
+              onClick={() => handleViewBook(book, index)}
             >
               <div className="CardImg">
                 <img
-                  src={images[index] || '/path/to/placeholder.jpg'}  // Display the corresponding image
+                  src={images[index] || '/path/to/placeholder.jpg'}  
                   alt={book.title || 'Untitled Book'}
                   className="CardImage"
                 />
