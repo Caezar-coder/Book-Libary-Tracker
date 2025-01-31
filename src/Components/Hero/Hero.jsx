@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import images from '../Data/images'; 
 import './Hero.css';
-
+const 
+URL = 'https://librarytracker-rb8z.onrender.com/getallbook'
 const Hero = () => {
   const [books, setBooks] = useState([]);
   const [filteredBooks, setFilteredBooks] = useState([]);
@@ -14,7 +15,7 @@ const Hero = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await fetch('https://librarytracker-rb8z.onrender.com/getallbook');
+        const response = await fetch(URL);
         if (!response.ok) {
           throw new Error(`Failed to fetch books: ${response.statusText}`);
         }
