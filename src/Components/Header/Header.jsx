@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         <div className="search">
            <div className="profile">
-            <img src="/src/Components/Data/Images/bookCover-removebg-preview.png" alt="" className='profileimg'/>
+            <img src="/src/assets/my picture.jpg" alt="" className='profileimg'/>
            </div>
         </div>
       </div>
