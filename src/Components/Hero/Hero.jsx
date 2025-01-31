@@ -36,6 +36,7 @@ const Hero = () => {
 
     fetchBooks();
   }, []);
+  
 
   const handleSearch = (e) => {
     const term = e.target.value.toLowerCase();
