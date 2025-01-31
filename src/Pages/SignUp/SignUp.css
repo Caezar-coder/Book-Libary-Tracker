@@ -1,105 +1,98 @@
-.SignUpBody{
+.SignUpBody {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color:  #D8BFD8;
+    background-color: #D8BFD8;
     gap: 20px;
-}
-
-.FirstNameHolder{
+  }
+  
+  .FirstNameHolder,
+  .LastNameHolder,
+  .PhoneNumberHolder,
+  .PasswordHolder,
+  .ConfirmPasswordHolder {
     width: 25%;
     height: max-content;
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.First-Name{
+  }
+  
+  .First-Name,
+  .LastName,
+  .PhoneNumber,
+  .Password,
+  .ConfirmPassword {
     width: 100%;
     height: 40px;
-    border-radius: 20px;
     padding: 10px;
-    border: 2px solid black;
-    background-color: white;
-}
-
-.LastNameHolder{
-    width: 25%;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-
-.LastName{
-    width: 100%;
-    height: 40px;
-    border-radius: 20px;
-    padding: 10px;
-    border: 2px solid black;
-    background-color: white;
-}
-.PhoneNumberHolder{
-    width: 25%;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.PhoneNumber{
-    width: 100%;
-    height: 40px;
-    border-radius: 20px;
-    padding: 10px;
-    border: 2px solid black;
-    background-color: white;
-}
-
-.PasswordHolder{
-    width: 25%;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.Password{
-    width: 100%;
-    height: 40px;
-    border-radius: 20px;
-    padding: 10px;
-    border: 2px solid black;
-    background-color: white;
-}
-.ConfirmPasswordHolder{
-    width: 25%;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.ConfirmPassword{
-    width: 100%;
-    height: 40px;
-    border-radius: 20px;
-    padding: 10px;
-    border: 2px solid black;
-    background-color: white;
-}
-
-.SignUpButton{
+    border-radius: 8px;
+    border: 2px solid blueviolet;
+  }
+  
+  .SignUpButton {
     width: 70px;
     height: 35px;
     border: none;
     border-radius: 8px;
     background-color: blueviolet;
     color: white;
-}
-
-.Login{
+  }
+  
+  .Login {
     color: black;
-}
+  }
+  
+  @media (max-width: 768px) {
+    .FirstNameHolder,
+    .LastNameHolder,
+    .PhoneNumberHolder,
+    .PasswordHolder,
+    .ConfirmPasswordHolder {
+      width: 80%;  /* Increase the width for smaller screens */
+    }
+  
+    .SignUpButton {
+      width: 60px;
+      height: 30px;
+    }
+  
+    .First-Name,
+    .LastName,
+    .PhoneNumber,
+    .Password,
+    .ConfirmPassword {
+      height: 35px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .FirstNameHolder,
+    .LastNameHolder,
+    .PhoneNumberHolder,
+    .PasswordHolder,
+    .ConfirmPasswordHolder {
+      width: 90%;  /* Further increase width on very small screens */
+    }
+  
+    .SignUpButton {
+      width: 50px;
+      height: 30px;
+      font-size: 12px;
+    }
+  
+    .First-Name,
+    .LastName,
+    .PhoneNumber,
+    .Password,
+    .ConfirmPassword {
+      height: 30px;
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  

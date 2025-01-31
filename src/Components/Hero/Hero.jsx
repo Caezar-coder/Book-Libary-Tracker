@@ -22,7 +22,7 @@ const Hero = () => {
 
         if (data && Array.isArray(data.data)) {
           setBooks(data.data);
-          setFilteredBooks(data.data); // Initialize filtered books
+          setFilteredBooks(data.data);
         } else {
           throw new Error('Expected an object with a "data" key holding an array.');
         }
@@ -40,16 +40,14 @@ const Hero = () => {
     const term = e.target.value.toLowerCase();
     setSearchTerm(term);
 
-    // Filter by genre
     const filtered = books.filter((book) =>
       book.genre?.toLowerCase().includes(term)
     );
     setFilteredBooks(filtered);
   };
 
-  const handleViewBook = (book) => {
-    console.log('Selected book:', book);
-    // Add navigation logic here if needed
+  const handleViewBook = (book, index) => {
+    navigate(`../book/${book.id}`, { state: { book, image: images[index] || '/path/to/placeholder.jpg' } });
   };
 
   const handleGoBack = () => {
@@ -67,10 +65,7 @@ const Hero = () => {
   return (
     <div className="HeroBody">
       <div className="directory">
-        <button onClick={handleGoBack} className='back'>Go back</button>
-      
-      {/* Search Bar */}
-      
+        <button onClick={handleGoBack} className="back">Go back</button>
         <input
           type="text"
           placeholder="Search books by genre..."
@@ -78,21 +73,20 @@ const Hero = () => {
           onChange={handleSearch}
           className="searchInput"
         />
-      
       </div>
-      {/* Book Cards */}
+
       <div className="CardHolder">
         {Array.isArray(filteredBooks) && filteredBooks.length > 0 ? (
-          filteredBooks.map((book, id) => (
+          filteredBooks.map((book, index) => (
             <div
-              key={book.id || id}
+              key={book.id || index}
               className="Card"
-              onClick={() => handleViewBook(book)}
+              onClick={() => handleViewBook(book, index)} // Pass the index to match the correct image
             >
               <div className="CardImg">
                 <img
-                  src={images[id] || id} 
-                  alt={book.genre || 'Unknown Genre'}
+                  src={images[index] || '/path/to/placeholder.jpg'}  // Display the corresponding image
+                  alt={book.title || 'Untitled Book'}
                   className="CardImage"
                 />
               </div>

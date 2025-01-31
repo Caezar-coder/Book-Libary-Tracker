@@ -1,65 +1,108 @@
-.LoginBody{
+.LoginBody {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #D8BFD8;
+  gap: 20px;
+}
+
+.phoneNumberHolder,
+.passwordHolder {
+  width: 20%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.phoneNumber,
+.password {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid blueviolet;
+}
+
+.forgotPass {
+  width: 20%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    cursor: pointer;
+  }
+}
+
+.LoginButton {
+  width: 80px;
+  height: 40px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .PhoneNumberHolder,
+  .PasswordHolder {
     width: 100%;
-    height: 100vh;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: 20px;
+  }
 
+  .ForgotPass {
+    width: 40%;
+  }
+
+  .phoneNumber,
+  .password {
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .LoginButton {
+    width: 70px;
+    height: 35px;
+    font-size: 14px;
+  }
 }
 
-.PhoneNumberHolder{
-    width: 20%;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.PasswordHolder{
-    width: 20%;
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.phoneNumber{
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 2px solid blueviolet;
-
-
-}
-.password{
-    width: 100%;
-    height: 40px;
-    padding: 10px;
-    border-radius: 8px;
-    border: 2px solid blueviolet;
-
-}
-.ForgotPass{
-    width: 20%;
-    height: max-content;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-
-    p{
-        cursor: pointer;
+@media (max-width: 480px) {
+    .LoginBody{
+        width: 100%;
+        height: 100vh;
+       
     }
-}
 
-.LoginButton{
-    width: 80px;
-    height: 40px;
-    background-color:  blueviolet;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 8px;
+
+  .phoneNumberHolder,
+  .passwordHolder {
+    width: 50%;
+  }
+
+  .forgotPass {
+    width: 55%;
+    justify-content: space-around;
+  }
+
+  .phoneNumber,
+  .password {
+    width: 100%;
+    height: 30px;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .LoginButton {
+    width: 60px;
+    height: 30px;
+    font-size: 12px;
+  }
+
 }

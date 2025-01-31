@@ -1,0 +1,190 @@
+.bookDetailBody {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .bookDetailBodyWrapper {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .LeftImage {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bookImg {
+    width: 55%;
+    height: 65%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .bookImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .bookTexts {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .rating {
+    width: 25%;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .star {
+    display: flex;
+    color: gold;
+    justify-content: space-around;
+  }
+  
+  .wishlist {
+    width: 120px;
+    height: 35px;
+    border-radius: 10px;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    font-weight: bolder;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.3s ease;
+  }
+  
+  .wishlist:hover {
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .returnModal, .confirmationModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .returnModalContent, .confirmationModalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dateInput, .confirmBtn, .cancelBtn {
+    width: 100%;
+  }
+  
+  .modalActions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .bookDetailBodyWrapper {
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .LeftImage {
+      width: 100%;
+      height: 30%;
+    }
+  
+    .bookTexts {
+      width: 100%;
+      height: auto;
+      display: flex;
+     align-items: center;
+    }
+  
+    .rating {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bookDetailBody {
+      height: auto;
+      padding: 20px;
+    }
+
+    .returnModalContent{
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+  
+    .bookDetailBodyWrapper {
+      flex-direction: column;
+      width: 100%;
+      box-shadow: none;
+    }
+  
+    .bookImg {
+      width: 70%;
+      height: 40%;
+    }
+  
+    .bookTexts {
+      padding: 10px;
+    }
+  
+    .wishlist {
+      width: 100px;
+      height: 30px;
+      font-size: 14px;
+    }
+    .returnModalButtons{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .confirmBtn {
+        width: 60px;
+     
+    }
+    .cancelBtn {
+        width: 60px;
+     
+    }
+  }
+  

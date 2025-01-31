@@ -7,24 +7,24 @@ export const useWishlist = () => {
 };
 
 export const WishlistProvider = ({ children }) => {
-  const [wishlist, setWishlist] = useState([]);
+  const [wishlist, setWishlist] = useState(
+    JSON.parse(localStorage.getItem('wishlist')) || []
+  );
 
- 
   const addToWishlist = (book) => {
-    setWishlist((prevWishlist) => {
-      const isAlreadyInWishlist = prevWishlist.some(
-        (item) => item.title === book.title
-      );
-      if (isAlreadyInWishlist) {
-        alert('This book is already in your wishlist!');
-        return prevWishlist;
-      }
-      return [...prevWishlist, book];
-    });
+    const updatedWishlist = [...wishlist, book];
+    setWishlist(updatedWishlist);
+    localStorage.setItem('wishlist', JSON.stringify(updatedWishlist));
+  };
+
+  const removeFromWishlist = (bookId) => {
+    const updatedWishlist = wishlist.filter((book) => book.id !== bookId);
+    setWishlist(updatedWishlist);
+    localStorage.setItem('wishlist', JSON.stringify(updatedWishlist));
   };
 
   return (
-    <WishlistContext.Provider value={{ wishlist, addToWishlist }}>
+    <WishlistContext.Provider value={{ wishlist, addToWishlist, removeFromWishlist }}>
       {children}
     </WishlistContext.Provider>
   );
