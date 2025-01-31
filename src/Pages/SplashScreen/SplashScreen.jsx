@@ -15,7 +15,7 @@ const SplashScreen = () => {
     <div className='SplashScreenBody'>
       <div className="splitBody">
       <div className="imgContainer">
-    <img src="/public/bookCover-removebg-preview.png" alt="" />
+    <img src="/bookCover-removebg-preview.png" alt="" />
       </div>
       </div>
       <div className="Directrory">
