@@ -22,7 +22,7 @@ const LandingPage = () => {
         </div>
         <div className="image">
           <div className="imgCard">
-          <img src="/public/Children-removebg-preview.png" alt="" />
+          <img src="/public/libary_mnagement-removebg-preview.png" alt="" />
           </div>
         </div>
       </div>

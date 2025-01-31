@@ -151,7 +151,7 @@ const BookDetail = () => {
         />
       )}
 
-      {/* Confirmation Popup */}
+     
       {isConfirmationOpen && (
         <div className="confirmationModal">
           <div className="confirmationModalContent">
@@ -164,7 +164,7 @@ const BookDetail = () => {
         </div>
       )}
 
-      {/* Return Date Input Modal */}
+     
       {isReturnDateInputOpen && (
         <div className="returnModal">
           <div className="returnModalContent">
