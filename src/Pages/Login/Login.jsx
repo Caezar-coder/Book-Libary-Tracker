@@ -42,7 +42,7 @@ const Login = () => {
     
     setError('');
     setTimeout(() => {
-      navigate('/Landing-page');
+      navigate('/Landing-page');  
     }, 2000);
   };
 
